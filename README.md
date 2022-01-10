@@ -2,7 +2,7 @@
 
 !!!<h3>К сожалению API для этого приложения был закрыт</h3>
 Ссылка на видео о работе приложения - https://drive.google.com/file/d/1JJGsc6k2v11JdM_EX3bjWQ40g3hl4Odc/view?usp=sharing
-!!!
+<br/>!!!
 
 <h4>Приложение для оформления займов.</h4>
 <ul>
