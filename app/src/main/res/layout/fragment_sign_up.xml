@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.auth.SignUpFragment">
+
+    <TextView
+        style="@style/error_text_color"
+        android:id="@+id/errorUserExists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:paddingHorizontal="15dp"
+        android:textSize="20sp"
+        android:text="@string/error_user_exists_txt"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_above="@id/signUpItemsContainer"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:id="@+id/signUpItemsContainer" >
+
+        <EditText
+            android:id="@+id/signUpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no"
+            android:hint="@string/hint_name" />
+
+        <EditText
+            android:id="@+id/signUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:importantForAutofill="no"
+            android:imeOptions="actionDone"
+            android:hint="@string/hint_password" />
+
+        <TextView
+            style="@style/error_text_color"
+            android:id="@+id/errorNeedNotEmptyFields"
+            android:paddingBottom="3dp"
+            android:paddingHorizontal="15dp"
+            android:text="@string/error_need_not_empty_fields_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_btn_text" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

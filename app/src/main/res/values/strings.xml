@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Final Project Shift</string>
+
+    <!-- Auth -->
+    <string name="hint_name">Логин</string>
+    <string name="hint_password">Пароль</string>
+    <string name="sign_in_btn_text">Вход</string>
+    <string name="sign_in_code_401_txt">Что-то пошло не так, повторите вход</string>
+    <string name="error_need_signup_txt">Такого пользователя не существует. Зарегестрируйтесь</string>
+    <string name="error_need_not_empty_fields_txt">Поля логин и пароль не могут быть пустыми</string>
+    <string name="error_user_exists_txt">Пользователь с таким именем уже существует</string>
+    <string name="sign_up_btn_text">Регистрация</string>
+    <string name="sign_up_code_401">Что-то пошло не так, повторите попытку</string>
+    <string name="sign_up_code_403">Используйте только буквы и цифры для логина и пароля</string>
+    <string name="sign_up_code_404">404 Not Found</string>
+    <string name="success_registration">Регистрация прошла успешно</string>
+
+    <!-- Loan -->
+    <string name="main_get_loan_btn_txt">Оформить займ</string>
+    <string name="main_show_all_loan_btn_txt">Мои займы</string>
+    <string name="main_error_403">Ошибка авторизации</string>
+
+    <string name="all_loans_info_txt">У вас пока нет займов</string>
+    <string name="all_loans_amount_txt">Займ на сумму:</string>
+    <string name="all_loans_percent_txt">Процентная ставка:</string>
+    <string name="all_loans_image_view_description">Стрелка указывающая на переход к подробному описанию займа</string>
+
+    <string name="details_descr_success_txt">Вы можете получить займ в ближайшем банке(для новых клиентов) или на карту банка.</string>
+    <string name="details_descr_registered_txt">Заявка находится на рассмотрении. Данная операция может занять от 2 до 7 рабочих дней.</string>
+    <string name="details_descr_rejected_txt">Вам отказано по данной заявке. За дополнительной информацией обращайтесь к сотрудникам банка.</string>
+
+    <string name="get_loan_period_txt">Срок займа</string>
+    <string name="get_loan_percent_txt">Процентная ставка</string>
+    <string name="get_loan_max_amount_txt">Максимальная сумма займа:</string>
+    <string name="get_loan_error_right_amount_txt">Указанная сумма не должна превышать максимальную сумму займа</string>
+    <string name="get_loan_error_need_not_empty_fields">Все поля должны быть заполнены</string>
+    <string name="get_loan_hint_amount">Сумма займа</string>
+    <string name="get_loan_hint_name">Имя</string>
+    <string name="get_loan_hint_last_name">Фамилия</string>
+    <string name="get_loan_hint_phone">Номер телефона</string>
+    <string name="get_loan_btn_txt">Оформить заявку на займ</string>
+    <string name="get_loan_amount_range_state_txt">Сумма не должна превышать максимальную сумму займа</string>
+
+    <string name="dialog_title">Заявка успешно отправленна</string>
+    <string name="dialog_msg">Посмотреть детальную информацию можно во вкладке \"Мои займы\"</string>
+    <string name="dialog_positive_btn_txt">Понятно</string>
+
+    <!-- Navigation -->
+    <string name="nav_label_sign_in">Вход</string>
+    <string name="nav_label_sign_up">Регистрация</string>
+    <string name="nav_label_main">Главная</string>
+    <string name="nav_label_get_loan">Получить займ</string>
+    <string name="nav_label_all_loans">Мои займы</string>
+    <string name="nav_label_loan_by_id">Информация о займе</string>
+
+
+    <string name="day_mark">дн.</string>
+    <string name="rub_mark">руб.</string>
+    <string name="percent_mark">%</string>
+    <string name="day_night">day/night</string>
+    <string name="IOException_txt">Потеряно соединение с интернетом. Проверьте подключение к сети.</string>
+    <string name="details_img_description">Показатель статуса займа</string>
+    <string name="details_id_txt">Заявка №</string>
+    <string name="details_status_txt">Статус:</string>
+    <string name="details_amount_txt">Сумма займа:</string>
+    <string name="details_percent_txt">Процентная ставка:</string>
+    <string name="details_attention">Обращаем Ваше внимание!</string>
+    <string name="details_period_txt">Займ необходимо погасить в течении</string>
+    <string name="details_date_txt">Начиная с</string>
+</resources>

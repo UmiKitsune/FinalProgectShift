@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.FinalProgect_Shift" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/day_purple_gray</item>
+        <item name="colorPrimaryDark">@color/day_purple_dark</item>
+        <item name="colorOnPrimary">@color/day_purple_dark</item>
+        <item name="colorAccent">@color/day_accent</item>
+        <item name="android:textColorPrimary">@color/day_purple_dark</item>
+        <item name="android:windowBackground">@color/day_background</item>
+    </style>
+
+
+</resources>

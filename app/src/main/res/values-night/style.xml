@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="error_text_color">
+        <item name="android:textColor">@color/night_error</item>
+    </style>
+
+    <style name="get_loan_card_theme">
+        <item name="android:background">@color/night_accent</item>
+        <item name="android:textColor">@color/night_card_color_text</item>
+    </style>
+</resources>

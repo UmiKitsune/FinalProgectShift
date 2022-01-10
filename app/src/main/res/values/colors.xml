@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!--my colors day-->
+    <color name="day_background">#fbfcfd</color>
+    <color name="day_purple_gray">#c6ccd8</color>
+    <color name="day_error">#bb7db2</color>
+    <color name="day_purple_dark">#6f6c9e</color>
+    <color name="day_purple_light">#d7cbd4</color>
+    <color name="day_accent">#bfd2de</color>
+
+
+    <!--my colors night-->
+    <color name="night_background">#303a43</color>
+    <color name="night_text_color">#e7ddd2</color>
+    <color name="night_accent">#4b674a</color>
+    <color name="night_red">#830e10</color>
+    <color name="night_green">#1f3102</color>
+    <color name="night_error">#9db802</color>
+    <color name="night_card_color_text">#f0eeef</color>
+
+
+    <!--colors for border-->
+    <color name="loan_text_color">#3f4d63</color>
+
+    <color name="border_red">#B3a63d4c</color>
+    <color name="border_green">#B3528e86</color>
+    <color name="border_yellow">#B3efca66</color>
+
+    <color name="border_bg_red">#1Aa63d4c</color>
+    <color name="border_bg_green">#1A528e86</color>
+    <color name="border_bg_yellow">#1Aefca66</color>
+</resources>

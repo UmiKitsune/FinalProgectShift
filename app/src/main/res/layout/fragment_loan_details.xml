@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    tools:context=".ui.fragments.loan.LoanDetailsFragment">
+
+    <ImageView
+        android:id="@+id/detailsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/details_img_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_approved" />
+
+    <TextView
+        android:id="@+id/detailsIdTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/details_id_txt"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/detailsImage"
+        app:layout_constraintTop_toTopOf="@id/detailsImage" />
+
+    <TextView
+        android:id="@+id/detailsId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/detailsIdTxt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/detailsStatusTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/details_status_txt"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/detailsImage"
+        app:layout_constraintStart_toEndOf="@id/detailsImage" />
+
+    <TextView
+        android:id="@+id/detailsStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/detailsStatusTxt"
+        app:layout_constraintStart_toEndOf="@id/detailsStatusTxt"
+        tools:text="Одобрено" />
+
+    <TextView
+        android:id="@+id/detailsAmountTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/details_amount_txt"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/detailsImage" />
+
+    <TextView
+        android:id="@+id/detailsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/detailsAmountTxt"
+        app:layout_constraintStart_toEndOf="@id/detailsAmountTxt"
+        tools:text="15000" />
+
+    <TextView
+        android:id="@+id/rubMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/rub_mark"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/detailsAmount"
+        app:layout_constraintStart_toEndOf="@id/detailsAmount" />
+
+    <TextView
+        android:id="@+id/detailsPercentTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/details_percent_txt"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/detailsAmountTxt" />
+
+    <TextView
+        android:id="@+id/detailsPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/detailsPercentTxt"
+        app:layout_constraintStart_toEndOf="@id/detailsPercentTxt"
+        tools:text="10.8" />
+
+    <TextView
+        android:id="@+id/percentMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/percent_mark"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/detailsPercent"
+        app:layout_constraintStart_toEndOf="@id/detailsPercent" />
+
+    <TextView
+        android:id="@+id/detailsDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/detailsPercentTxt"
+        tools:text="Если ваш займ одобрен вы можете получить его на карту или в банке." />
+
+
+    <TextView
+        android:id="@+id/detailsAttention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/details_attention"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/detailsDescription" />
+
+    <TextView
+        android:id="@+id/detailsPeriodTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_period_txt"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/detailsAttention" />
+
+    <TextView
+        android:id="@+id/detailsPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/detailsPeriodTxt"
+        app:layout_constraintTop_toBottomOf="@id/detailsAttention"
+        tools:text="60" />
+
+    <TextView
+        android:id="@+id/dayMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="@string/day_mark"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/detailsPeriod"
+        app:layout_constraintStart_toEndOf="@id/detailsPeriod" />
+
+    <TextView
+        android:id="@+id/detailsDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_date_txt"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/detailsPeriodTxt" />
+
+    <TextView
+        android:id="@+id/detailsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/detailsDateTxt"
+        app:layout_constraintTop_toBottomOf="@id/detailsPeriodTxt"
+        tools:text="10.11.20" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/detailsSuccessGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="
+        detailsAttention,
+        detailsPeriodTxt,
+        detailsPeriod,
+        detailsDateTxt,
+        detailsDate,
+        dayMark"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

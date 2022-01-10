@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.finalprogect_shift.ui.fragments.MainFragment"
+        android:label="@string/nav_label_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_getLoanFragment"
+            app:destination="@id/getLoanFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_allLoansInfoFragment"
+            app:destination="@id/allLoansInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getLoanFragment"
+        android:name="com.example.finalprogect_shift.ui.fragments.loan.GetLoanFragment"
+        android:label="@string/nav_label_get_loan"
+        tools:layout="@layout/fragment_get_loan" >
+        <argument
+            android:name="loan_max_amount"
+            app:argType="integer" />
+        <argument
+            android:name="loan_percent"
+            app:argType="string" />
+        <argument
+            android:name="loan_period"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/allLoansInfoFragment"
+        android:name="com.example.finalprogect_shift.ui.fragments.loan.AllLoansFragment"
+        android:label="@string/nav_label_all_loans"
+        tools:layout="@layout/fragment_all_loans" >
+        <argument
+            android:name="loans"
+            app:argType="com.example.finalprogect_shift.domain.models.ShowLoansList"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_allLoansInfoFragment_to_loanDetailsFragment"
+            app:destination="@id/loanDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loanDetailsFragment"
+        android:name="com.example.finalprogect_shift.ui.fragments.loan.LoanDetailsFragment"
+        android:label="@string/nav_label_loan_by_id"
+        tools:layout="@layout/fragment_loan_details" >
+        <argument
+            android:name="loanById"
+            app:argType="com.example.finalprogect_shift.domain.models.GetLoanResponse" />
+    </fragment>
+</navigation>

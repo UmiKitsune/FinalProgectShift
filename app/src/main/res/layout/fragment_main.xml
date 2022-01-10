@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.MainFragment">
+
+
+    <LinearLayout
+        android:id="@+id/mainItemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/getLoanBtn"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="@string/main_get_loan_btn_txt" />
+
+        <Button
+            android:id="@+id/showAllLoanBtn"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/main_show_all_loan_btn_txt" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/error_text_color"
+        android:id="@+id/errorMainFr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        android:visibility="gone"
+        tools:text="error"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

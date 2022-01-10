@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FinalProgect_Shift" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/night_red</item>
+        <item name="colorPrimaryDark">@color/night_red</item>
+        <item name="colorOnPrimary">@color/night_text_color</item>
+        <item name="colorAccent">@color/night_accent</item>
+        <item name="android:textColorPrimary">@color/night_text_color</item>
+        <item name="android:windowBackground">@color/night_background</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="error_text_color">
+        <item name="android:textColor">@color/day_error</item>
+    </style>
+
+    <style name="get_loan_card_theme">
+        <item name="android:background">@color/day_purple_light</item>
+        <item name="android:textColor">@color/loan_text_color</item>
+    </style>
+</resources>
